@@ -14,6 +14,4 @@ def to_rna(dna):
              'T': 'A',
              'A': 'U'}
 
-    return ''.join(  # Joins list generated in list comprehension to a single string.
-        [trans[nuc] for nuc in dna]  # List comprehension to translate based on trans dictionary.
-    )
+    return ''.join(trans[nuc] for nuc in dna)  # List comprehension to translate based on trans dictionary.
