@@ -10,8 +10,10 @@ def hamming(strand_a, strand_b):
     """
 
     # Calculates the minimum and maximum lengths of the two strands.
-    min_length = min(len(strand_a), len(strand_b))
-    max_length = max(len(strand_a), len(strand_b))
+    length_a = len(strand_a)
+    length_b = len(strand_b)
+    min_length = min(length_a, length_b)
+    max_length = max(length_a, length_b)
 
     ham = 0  # Initializes ham count.
 
